@@ -23,7 +23,7 @@ class ReviewState extends State<Review> {
   }
 
   void _initBoard() async {
-    await firestore.settings(timestampsInSnapshotsEnabled: true);
+    // await firestore.settings(timestampsInSnapshotsEnabled: false);
     var connectivityResult = await (new Connectivity().checkConnectivity());
     if (connectivityResult == ConnectivityResult.mobile ||
         connectivityResult == ConnectivityResult.wifi) {

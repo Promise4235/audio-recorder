@@ -57,7 +57,7 @@ class _ReadDocumentState extends State<ReadDocument>
 
   DataStatus dataStatus;
   void _initData() async {
-    await firestore.settings(timestampsInSnapshotsEnabled: true);
+    // await firestore.settings(timestampsInSnapshotsEnabled: false);
     setState(() {
       isLoading = false;
     });

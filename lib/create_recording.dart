@@ -99,7 +99,7 @@ class _RecordingPageState extends State<RecordingPage>
           break;
         } else {
           count++;
-          if (count == data.documents.length - 1) {
+          if (count == data.documents.length) {
             setState(() {
               dataStatus = DataStatus.noTranslation;
             });
