@@ -94,7 +94,8 @@ class _RecordingPageState extends State<RecordingPage>
         var doc=documentSnapshot['status'];
         if (documentSnapshot['status'] != 'translated' ||doc ==null) {
           _text = documentSnapshot['text'];
-          _title=documentSnapshot['title'];
+//           _title=documentSnapshot['title'];
+          _title=documentSnapshot.documentID;
           setState(() {
             dataStatus = DataStatus.loaded;
           });
